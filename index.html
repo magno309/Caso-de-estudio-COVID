@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <header>
+        <h1>Reporte Coronavirus</h1>
+    </header>
+    <main class="row col-sm-1 col-md-1 col-2">
+        <article>
+            <header>
+                <h2>
+                    A la fecha existen <span id="global-confirmados"></span> de casos confirmador de Coronavirus alrededor del mundo
+                </h2>
+            </header>
+            <!-- Aquí va un mapa de reporte-->
+            <main>
+                <p>
+                    Desde la última semana, se ha incrementado ###,### casos en el mundo o un #%
+                </p>
+            </main>
+        </article>
+        <article>
+            <header>
+                <h2>
+                    <span id="global-muertos"></span> personas han muerto por Coronavirus
+                </h2>
+            </header>
+            <!-- Agregar un mapa o gráfico -->
+            <main>
+                <p>
+                    Esto representa un #% de tasa de mortalidad. En comparación, la tasa de mortalidad de la gripa
+                    estacional es tipicamente de alrededor de 0.1% en los Estados Unidos, de acuerdo al New York Time2
+                </p>
+            </main>
+        </article>
+        <article>
+            <header>
+                <h2>
+                    México está lidiando con <span id="mexico-activos"></span> casos activos
+                </h2>
+            </header>
+            <!--Agregar mapa o gráfico-->
+            <main>
+                <p>
+                    <span id="mexico-porcentaje"></span>% de la población tiene o ha tenido Coronavirus. Más casos no reportados podrían estar en casa
+                    enfermos.
+                </p>
+            </main>
+        </article>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
