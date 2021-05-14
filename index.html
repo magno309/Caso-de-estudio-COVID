@@ -14,7 +14,7 @@
 <body class="container">
     <header>
         <div class="virus virus-left"></div>
-        <h1>Reporte Coronavirus</h1>
+        <h1 id="titulo-principal">Reporte Coronavirus</h1>
         <p>Una fuente rápida de información sobre el COVID-19</p>
         <div class="virus virus-right"></div>
     </header>
@@ -22,10 +22,14 @@
         <article>
             <header>
                 <h2>
-                    A la fecha existen <span id="global-confirmados"></span> de casos confirmador de Coronavirus alrededor del mundo
+                    A la fecha existen <span id="global-confirmados"></span> de casos confirmador de Coronavirus
+                    alrededor del mundo
                 </h2>
             </header>
             <!-- Aquí va un mapa de reporte-->
+            <figure class="highcharts-figure">
+                <div id="grafico"></div>
+            </figure>
             <main>
                 <p>
                     Desde la última semana, se ha incrementado ###,### casos en el mundo o un #%
@@ -55,13 +59,16 @@
             <!--Agregar mapa o gráfico-->
             <main>
                 <p>
-                    <span id="mexico-porcentaje"></span>% de la población tiene o ha tenido Coronavirus. Más casos no reportados podrían estar en casa
+                    <span id="mexico-porcentaje"></span>% de la población tiene o ha tenido Coronavirus. Más casos no
+                    reportados podrían estar en casa
                     enfermos.
                 </p>
             </main>
         </article>
     </main>
-
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
